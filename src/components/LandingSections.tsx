@@ -1,4 +1,4 @@
-import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw } from "lucide-react";
+import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star } from "lucide-react";
 
 export function AnnouncementBar() {
   return (
@@ -71,5 +71,36 @@ function TrustBadge({ icon: Icon, text, iconColor }: { icon: LucideIcon; text: s
       <Icon className={`w-4 h-4 ${iconColor}`} />
       <span className="text-foreground">{text}</span>
     </span>
+  );
+}
+
+export function WhatYouWillReceive() {
+  return (
+    <section className="py-16 px-4 bg-muted/50">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-2xl md:text-3xl font-black mb-2 text-foreground">
+          O Que Você Vai <span className="text-primary">Receber</span>
+        </h2>
+        <p className="text-sm mb-10 text-muted-foreground">Tudo o que você precisa para ensinar a Bíblia de forma criativa e sem esforço</p>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <FeatureCard icon={BookOpen} title="+750 Atividades Bíblicas" desc="Dinâmicas, jogos, histórias e atividades prontas para aplicar." />
+          <FeatureCard icon={Users} title="Ideal para Ministério Infantil" desc="Perfeito para professoras, líderes e mães cristãs." />
+          <FeatureCard icon={Zap} title="Acesso Imediato após a compra" desc="Material liberado automaticamente, sem espera." />
+          <FeatureCard icon={Star} title="Uso Sem Limites para sempre" desc="Imprima e utilize sempre que precisar." />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FeatureCard({ icon: Icon, title, desc }: { icon: LucideIcon; title: string; desc: string }) {
+  return (
+    <div className="rounded-2xl p-5 text-center shadow-sm hover:shadow-md transition-all group bg-white">
+      <div className="w-12 h-12 mx-auto mb-4 rounded-2xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform bg-gradient-to-br from-primary to-blue-800">
+        <Icon className="w-6 h-6 text-white" />
+      </div>
+      <h3 className="font-bold text-sm mb-1 leading-snug text-foreground">{title}</h3>
+      <p className="text-xs leading-relaxed text-muted-foreground">{desc}</p>
+    </div>
   );
 }
