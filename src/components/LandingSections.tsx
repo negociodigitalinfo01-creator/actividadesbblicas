@@ -325,7 +325,7 @@ export function BonusDetails() {
             index="03" 
             title="Juegos Bíblicos" 
             desc="Quiz, dominó, UNO y ¡muchas vainas más! Actividades interactivas para el aprendizaje."
-            oldPrice="$ 29.900"
+            oldPrice="$ 39.900"
             img="/bono-3.png"
           />
         </div>
