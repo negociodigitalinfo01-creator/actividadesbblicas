@@ -318,7 +318,7 @@ export function BonusDetails() {
             index="02" 
             title="Libro de Colorear Cristiano" 
             desc="Dibujos bien tiernos para enseñar con toda la alegría. Ilustraciones para reforzar enseñanzas."
-            oldPrice="$ 27.000"
+            oldPrice="$ 56.900"
             img="/bono-2.png"
           />
           <BonusCard 
