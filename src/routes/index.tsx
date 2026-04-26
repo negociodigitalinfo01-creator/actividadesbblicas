@@ -7,6 +7,7 @@ import {
   BonusDetails, 
   Pricing, 
   TestimonialsCarousel,
+  FAQ,
   Author, 
   Footer 
 } from "../components/LandingSections";
@@ -25,6 +26,7 @@ function Index() {
       <BonusDetails />
       <Pricing />
       <TestimonialsCarousel />
+      <FAQ />
       <Author />
       <Footer />
     </div>
