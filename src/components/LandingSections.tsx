@@ -1,4 +1,6 @@
-import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star, Gift, ChevronDown, Shield, Lock, ThumbsUp, Award } from "lucide-react";
+import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star, Gift, ChevronDown, Shield, Lock, ThumbsUp, Award, MessageSquare } from "lucide-react";
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 export function AnnouncementBar() {
   return (
@@ -336,6 +338,48 @@ function BonusCard({ index, title, desc, oldPrice, img }: { index: string; title
         </span>
       </div>
     </div>
+  );
+}
+
+export function TestimonialsCarousel() {
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })]);
+
+  const testimonials = [
+    "/depoimento-whats-1.png",
+    "/depoimento-whats-2.png",
+    "/depoimento-whats-3.png",
+  ];
+
+  return (
+    <section className="py-16 px-4 bg-muted/50 overflow-hidden">
+      <div className="max-w-4xl mx-auto text-center mb-10">
+        <div className="inline-flex items-center gap-2 mb-3">
+          <MessageSquare className="w-4 h-4 text-primary" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-primary">Depoimentos reais</span>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-black text-foreground">
+          O Que Dizem <span className="text-primary">Mães e Professoras</span>
+        </h2>
+      </div>
+
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="embla" ref={emblaRef}>
+          <div className="embla__container flex">
+            {testimonials.map((src, index) => (
+              <div key={index} className="embla__slide flex-[0_0_85%] min-w-0 sm:flex-[0_0_45%] lg:flex-[0_0_30%] px-2">
+                <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-white">
+                  <img 
+                    src={src} 
+                    alt={`Depoimento ${index + 1}`} 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
