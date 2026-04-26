@@ -380,8 +380,8 @@ export function TestimonialsCarousel() {
     },
     {
       img: "/depoimento-whats-3.png",
-      name: "Juliana Silva",
-      text: "¡Uff, re-feliz! Inclusive ya se lo pasé a las outras profes de la iglesia. Las clases quedaron re-chéveres y los pelados participan mucho más."
+      name: "Martha Lucía",
+      text: "¡Qué bendición de material! Mis pelados en la escuela dominical están re-amañados con las actividades. Es súper fácil de usar y muy completo. ¡Muchas gracias!"
     },
   ];
 
