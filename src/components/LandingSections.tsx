@@ -371,6 +371,8 @@ export function TestimonialsCarousel() {
                   <img 
                     src={src} 
                     alt={`Depoimento ${index + 1}`} 
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-cover"
                   />
                 </div>
