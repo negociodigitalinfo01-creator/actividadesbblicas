@@ -1,6 +1,26 @@
+import { useEffect } from "react";
 import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star, Gift, ChevronDown, Shield, Lock, ThumbsUp, Award, MessageSquare } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+
+function useWistiaScripts() {
+  useEffect(() => {
+    const scripts = [
+      { id: "wistia-player-script", src: "https://fast.wistia.com/player.js", type: undefined },
+      { id: "wistia-embed-zwnzq9nuy8", src: "https://fast.wistia.com/embed/zwnzq9nuy8.js", type: "module" },
+    ];
+
+    scripts.forEach(({ id, src, type }) => {
+      if (document.getElementById(id)) return;
+      const script = document.createElement("script");
+      script.id = id;
+      script.src = src;
+      script.async = true;
+      if (type) script.type = type;
+      document.head.appendChild(script);
+    });
+  }, []);
+}
 
 export function AnnouncementBar() {
   return (
@@ -13,6 +33,8 @@ export function AnnouncementBar() {
 }
 
 export function Hero() {
+  useWistiaScripts();
+
   return (
     <section className="pt-20 pb-16 px-4 bg-secondary">
       <div className="max-w-3xl mx-auto text-center">
@@ -35,7 +57,9 @@ export function Hero() {
             <div className="absolute right-[-2px] top-[30%] w-[3px] height-[64px] bg-zinc-900 rounded-r-sm" />
             
             <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black">
-              <wistia-player media-id="zwnzq9nuy8" aspect="0.5625" className="block w-full h-full" />
+              <div className="w-full h-full" suppressHydrationWarning dangerouslySetInnerHTML={{ 
+                __html: `<wistia-player media-id="zwnzq9nuy8" aspect="0.5625"></wistia-player>` 
+              }} />
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[78px] h-[22px] bg-black rounded-full z-10 pointer-events-none" />
             </div>
           </div>
