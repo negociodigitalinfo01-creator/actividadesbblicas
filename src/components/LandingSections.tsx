@@ -138,7 +138,7 @@ export function Pricing() {
           <div className="rounded-2xl border-2 overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-all bg-white border-border">
             <div className="px-6 pt-6 pb-5 text-center border-b">
               <h3 className="text-2xl font-black tracking-tight uppercase mb-3 text-primary">Paquete Esencial</h3>
-              <span className="line-through text-sm font-medium text-destructive">De $ 49.900</span>
+              <span className="line-through text-sm font-medium text-destructive">De $ 19.900</span>
               <div className="text-3xl font-black mt-1 text-success">a solo: $ 9.90</div>
               <p className="text-xs mt-1 text-muted-foreground">pago único</p>
               <p className="text-xs font-bold mt-2 mb-3 text-success">¡Ahorre $ 40.000!</p>
