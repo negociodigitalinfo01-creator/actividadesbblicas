@@ -44,17 +44,6 @@ export const Route = createRootRoute({
         href: appCss,
       },
     ],
-    scripts: [
-      {
-        src: "https://fast.wistia.com/player.js",
-        async: true,
-      },
-      {
-        src: "https://fast.wistia.com/embed/zwnzq9nuy8.js",
-        async: true,
-        type: "module",
-      },
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
