@@ -153,7 +153,7 @@ export function Pricing() {
             </div>
             <div className="px-6 pb-6">
               <button className="w-full rounded-full font-bold py-3 border-2 transition-all cursor-pointer text-sm bg-primary border-primary text-white hover:opacity-90">
-                Quiero el Esencial
+                ¡Quiero mi acceso ya mismo!
               </button>
               <div className="mt-4 rounded-xl px-4 py-3 text-center bg-primary/5">
                   <p className="text-[11px] font-extrabold tracking-wide uppercase mb-1.5 text-primary">
@@ -200,7 +200,7 @@ export function Pricing() {
             </div>
             <div className="px-6 pb-6">
               <a href="https://pay.wiapy.com/kWefAj46uw" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
-                ¡Quiero el Completo!
+                ¡Quiero mi acceso ya mismo!
               </a>
             </div>
           </div>
@@ -338,7 +338,7 @@ export function BonusDetails() {
         <div className="block">
           <a href="#oferta">
             <button className="text-white text-sm px-8 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition-transform border-none cursor-pointer bg-success hover:opacity-90">
-              LIBERAR BONOS AHORA
+              ¡Quiero mi acceso ya mismo!
             </button>
           </a>
         </div>
