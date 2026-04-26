@@ -415,8 +415,12 @@ export function TestimonialsCarousel() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                        {testimonial.name.charAt(0)}
+                      <div className="w-10 h-10 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center border border-primary/20">
+                        <img 
+                          src={testimonial.img} 
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover object-top scale-[2.5]"
+                        />
                       </div>
                       <div className="text-left">
                         <p className="text-sm font-bold text-foreground leading-none">{testimonial.name}</p>
