@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { AnnouncementBar, Hero } from "../components/LandingSections";
+import { AnnouncementBar, Hero, WhatYouWillReceive } from "../components/LandingSections";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -10,7 +10,7 @@ function Index() {
     <div className="min-h-screen">
       <AnnouncementBar />
       <Hero />
-      {/* Add other sections here later */}
+      <WhatYouWillReceive />
     </div>
   );
 }
