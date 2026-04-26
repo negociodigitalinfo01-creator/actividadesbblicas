@@ -345,9 +345,9 @@ export function TestimonialsCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })]);
 
   const testimonials = [
-    "/depoimento-whats-1.png",
-    "/depoimento-whats-2.png",
-    "/depoimento-whats-3.png",
+    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-1.png",
+    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-2.png",
+    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-3.png",
   ];
 
   return (
