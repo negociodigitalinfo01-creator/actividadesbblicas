@@ -1,4 +1,4 @@
-import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star, Gift, ChevronDown, Shield, Lock } from "lucide-react";
+import { LucideIcon, Play, CircleCheckBig, Zap, RotateCcw, BookOpen, Users, Star, Gift, ChevronDown, Shield, Lock, ThumbsUp, Award } from "lucide-react";
 
 export function AnnouncementBar() {
   return (
@@ -212,6 +212,216 @@ export function Pricing() {
         </div>
       </div>
     </section>
+  );
+}
+
+export function WhyChoose() {
+  return (
+    <section className="py-16 px-4 bg-secondary">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-10">
+          <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 tracking-wide uppercase text-primary">
+            Por que escolher?
+          </span>
+          <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">
+            Por Que Escolher a <span className="text-primary">Coleção Bíblica Infantil?</span>
+          </h2>
+          <p className="max-w-xl mx-auto text-sm leading-relaxed text-muted-foreground">
+            Descubra por que professoras, líderes e mães cristãs estão usando este material para ensinar a Palavra de Deus com mais leveza e criatividade.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <WhyCard 
+            icon={Users} 
+            title="Ideal para Ministério Infantil" 
+            desc="Atividades pensadas para Escola Dominical, cultos infantis e ensino cristão em casa."
+            gradient="from-blue-500 to-blue-700"
+          />
+          <WhyCard 
+            icon={BookOpen} 
+            title="Fundamentado na Palavra" 
+            desc="Conteúdo baseado em histórias e princípios bíblicos para fortalecer valores cristãos."
+            gradient="from-indigo-500 to-blue-700"
+          />
+          <WhyCard 
+            icon={CircleCheckBig} 
+            title="Pronto para Imprimir" 
+            desc="Material organizado e fácil de aplicar, sem precisar preparar nada do zero."
+            gradient="from-cyan-500 to-blue-700"
+          />
+          <WhyCard 
+            icon={Star} 
+            title="Ensino Leve e Envolvente" 
+            desc="Dinâmicas e atividades que tornam o aprendizado bíblico mais divertido e participativo."
+            gradient="from-blue-400 to-blue-800"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function WhyCard({ icon: Icon, title, desc, gradient }: { icon: LucideIcon; title: string; desc: string; gradient: string }) {
+  return (
+    <div className="rounded-2xl border-2 p-5 flex items-start gap-4 hover:shadow-xl transition-all group bg-white border-transparent hover:border-border">
+      <div className={`w-14 h-14 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform bg-gradient-to-br ${gradient} shrink-0`}>
+        <Icon className="w-7 h-7 text-white" />
+      </div>
+      <div className="text-left">
+        <h3 className="font-bold text-base mb-1 leading-snug text-foreground">{title}</h3>
+        <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
+      </div>
+    </div>
+  );
+}
+
+export function BonusDetails() {
+  return (
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-5xl mx-auto text-center">
+        <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase text-primary">
+          Bônus exclusivos
+        </span>
+        <h2 className="text-2xl md:text-3xl font-black mb-2 text-foreground">
+          Receba <span className="text-primary">3 Bônus Incríveis</span> de Graça!
+        </h2>
+        <p className="mb-10 text-sm max-w-xl mx-auto text-muted-foreground">
+          Materiais extras que vão transformar suas aulas em experiências inesquecíveis
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <BonusCard 
+            index="01" 
+            title="Potinho da Oração Infantil" 
+            desc="Modelos prontos para incentivar o hábito da oração diária de forma simples e prática."
+            oldPrice="R$ 19,90"
+            img="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+          />
+          <BonusCard 
+            index="02" 
+            title="Livro de Colorir Cristão" 
+            desc="Ilustrações bíblicas para colorir e reforçar os ensinamentos de maneira criativa."
+            oldPrice="R$ 27,00"
+            img="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop"
+          />
+          <BonusCard 
+            index="03" 
+            title="Jogos Bíblicos Educativos" 
+            desc="Atividades interativas para tornar o aprendizado bíblico mais leve e divertido."
+            oldPrice="R$ 29,90"
+            img="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800&auto=format&fit=crop"
+          />
+        </div>
+
+        <div className="rounded-2xl border-2 inline-flex flex-col items-center gap-1 px-10 py-4 mb-8 border-border">
+          <p className="text-xs uppercase tracking-wide font-bold text-foreground">Total em Bônus</p>
+          <p className="text-2xl font-black line-through text-destructive">R$ 76,80</p>
+          <p className="text-lg font-black text-success">Hoje: Completamente GRÁTIS</p>
+        </div>
+
+        <div className="block">
+          <a href="#oferta">
+            <button className="text-white text-sm px-8 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition-transform border-none cursor-pointer bg-success hover:opacity-90">
+              LIBERAR BÔNUS AGORA
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BonusCard({ index, title, desc, oldPrice, img }: { index: string; title: string; desc: string; oldPrice: string; img: string }) {
+  return (
+    <div className="rounded-2xl border-2 overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all bg-white border-border">
+      <div className="px-5 pt-5 pb-5 flex flex-col items-center flex-1">
+        <span className="text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest text-primary">BÔNUS {index}</span>
+        <img alt={title} className="w-full rounded-xl mb-5 aspect-video object-cover shadow-md" src={img} />
+        <h3 className="font-bold text-base mb-2 leading-snug text-foreground">{title}</h3>
+        <p className="text-sm leading-relaxed mb-4 flex-1 text-muted-foreground">{desc}</p>
+        <span className="text-xs font-semibold px-3 py-1 rounded-full text-primary">
+          Valor: <span className="line-through font-semibold text-destructive">{oldPrice}</span> · <span className="font-black">GRÁTIS</span>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+export function Author() {
+  return (
+    <section className="py-16 px-4 bg-muted">
+      <div className="max-w-lg mx-auto">
+        <div className="flex items-center justify-center gap-2 mb-8">
+          <div className="w-8 h-[1px] bg-border" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-primary">Sobre a Autora</span>
+          <div className="w-8 h-[1px] bg-border" />
+        </div>
+        <div className="rounded-3xl border shadow-md overflow-hidden bg-white border-blue-200">
+          <div className="h-16 bg-primary/5" />
+          <div className="flex flex-col items-center -mt-10 px-6 pb-6">
+            <div className="relative mb-3">
+              <div className="w-20 h-20 rounded-full border-4 overflow-hidden shadow-lg border-primary">
+                <img alt="Ana Cristina" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" />
+              </div>
+              <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-[9px] font-black px-2.5 py-0.5 rounded-full whitespace-nowrap shadow bg-primary text-white">✦ Autora</span>
+            </div>
+            <h3 className="text-xl font-black mt-2 text-center text-foreground">Ana Cristina</h3>
+            <p className="text-xs font-bold text-center mb-5 text-primary uppercase tracking-tight">Educadora Cristã e Líder de Ministério Infantil</p>
+            <div className="space-y-3 w-full">
+              <AuthorPoint text="Com anos de experiência no ensino bíblico infantil, Ana Cristina dedica sua caminhada a ajudar crianças a crescerem na fé desde cedo." />
+              <AuthorPoint text="Ao longo do tempo, percebeu a dificuldade que muitas professoras, líderes e mães enfrentam ao preparar aulas envolventes e fundamentadas na Palavra de Deus." />
+              <AuthorPoint text="Foi a partir dessa necessidade que nasceu a Coleção Bíblica Infantil, reunindo mais de 750 atividades bíblicas prontas para imprimir e aplicar com facilidade." />
+              <div className="border-l-2 border-amber-400 bg-amber-50 rounded-r-xl pl-3 pr-3 py-2.5">
+                <p className="text-xs leading-relaxed text-amber-900">
+                  <span className="font-black">Seu propósito é claro: Ensinar a Palavra de Deus de forma leve, criativa e significativa</span>, fortalecendo valores cristãos na vida das crianças.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AuthorPoint({ text }: { text: string }) {
+  return (
+    <div className="border-l-2 border-primary/20 rounded-r-xl pl-3 pr-3 py-2.5">
+      <p className="text-xs leading-relaxed text-muted-foreground">{text}</p>
+    </div>
+  );
+}
+
+export function Footer() {
+  return (
+    <footer className="relative overflow-hidden pt-14 pb-10 px-4 text-center bg-white border-t border-blue-100">
+      <div className="relative max-w-sm mx-auto">
+        <div className="flex items-center justify-center gap-2.5 mb-3">
+          <div className="w-9 h-9 rounded-xl border flex items-center justify-center border-border">
+            <BookOpen className="w-5 h-5 text-primary" />
+          </div>
+          <span className="font-black text-lg tracking-tight text-foreground">Coleção Bíblica Infantil</span>
+        </div>
+        <p className="text-sm mb-6 leading-relaxed text-muted-foreground">
+          Transformando o <span className="font-bold px-1.5 py-0.5 rounded-md text-primary bg-primary/5">aprendizado bíblico infantil</span>
+        </p>
+        <div className="h-px w-full mb-5 bg-border" />
+        <div className="flex justify-center gap-3 flex-wrap mb-6">
+          <FooterBadge text="+750 Atividades" />
+          <FooterBadge text="Garantia 14 Dias" color="text-success" />
+          <FooterBadge text="Acesso Vitalício" color="text-amber-600" bg="bg-amber-50" />
+        </div>
+        <p className="text-[10px] text-muted-foreground">© 2026 Coleção Bíblica Infantil. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  );
+}
+
+function FooterBadge({ text, color = "text-primary", bg = "bg-white" }: { text: string; color?: string; bg?: string }) {
+  return (
+    <span className={`text-[10px] font-black px-3 py-1 rounded-full border border-border ${color} ${bg}`}>
+      {text}
+    </span>
   );
 }
 

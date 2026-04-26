@@ -1,5 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { AnnouncementBar, Hero, WhatYouWillReceive, Pricing } from "../components/LandingSections";
+import { 
+  AnnouncementBar, 
+  Hero, 
+  WhatYouWillReceive, 
+  WhyChoose, 
+  BonusDetails, 
+  Pricing, 
+  Author, 
+  Footer 
+} from "../components/LandingSections";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -11,7 +20,11 @@ function Index() {
       <AnnouncementBar />
       <Hero />
       <WhatYouWillReceive />
+      <WhyChoose />
+      <BonusDetails />
       <Pricing />
+      <Author />
+      <Footer />
     </div>
   );
 }
