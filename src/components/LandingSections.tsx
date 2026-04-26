@@ -346,8 +346,8 @@ export function TestimonialsCarousel() {
 
   const testimonials = [
     "/depoimento-whats-1.png",
-    "/depoimento-whats-2.png",
-    "/depoimento-whats-3.png",
+    "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=1000&auto=format&fit=crop",
   ];
 
   return (
