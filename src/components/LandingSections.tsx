@@ -361,7 +361,7 @@ export function Author() {
           <div className="flex flex-col items-center -mt-10 px-6 pb-6">
             <div className="relative mb-3">
               <div className="w-20 h-20 rounded-full border-4 overflow-hidden shadow-lg border-primary">
-                <img alt="Ana Cristina" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" />
+                <img alt="Ana Cristina" className="w-full h-full object-cover" src="/autora-foto.png" />
               </div>
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-[9px] font-black px-2.5 py-0.5 rounded-full whitespace-nowrap shadow bg-primary text-white">✦ Autora</span>
             </div>
