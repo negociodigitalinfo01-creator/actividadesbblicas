@@ -35,7 +35,7 @@ export function Hero() {
             <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black cursor-pointer group">
               <video 
                 src="/vsl.mp4" 
-                poster="https://images.unsplash.com/photo-1512011516432-118d22744033?q=80&w=800&auto=format&fit=crop" 
+                poster="/vsl-poster.jpg" 
                 playsInline 
                 className="w-full h-full object-cover"
               />
