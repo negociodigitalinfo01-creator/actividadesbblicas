@@ -367,9 +367,21 @@ export function TestimonialsCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })]);
 
   const testimonials = [
-    "/depoimento-whats-1.png",
-    "/depoimento-whats-2.png",
-    "/depoimento-whats-3.png",
+    {
+      img: "/depoimento-whats-1.png",
+      name: "Juliana Silva",
+      text: "¡Uff, re-feliz! Inclusive ya se lo pasé a las otras profes de la iglesia. Las clases quedaron re-chéveres y los pelados participan mucho más. Valé mucho la pena, de verdad."
+    },
+    {
+      img: "/depoimento-whats-2.png",
+      name: "Carla Martínez",
+      text: "De una lo usé con mis pelados este fincho. Les fascinó el libro de colorear. Está mucho más bacano enseñar la Biblia ahora. Hasta mi marido quedó re-tramado."
+    },
+    {
+      img: "/depoimento-whats-3.png",
+      name: "Juliana Silva",
+      text: "¡Uff, re-feliz! Inclusive ya se lo pasé a las outras profes de la iglesia. Las clases quedaron re-chéveres y los pelados participan mucho más."
+    },
   ];
 
   return (
@@ -387,16 +399,39 @@ export function TestimonialsCarousel() {
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="embla" ref={emblaRef}>
           <div className="embla__container flex">
-            {testimonials.map((src, index) => (
-              <div key={index} className="embla__slide flex-[0_0_85%] min-w-0 sm:flex-[0_0_45%] lg:flex-[0_0_30%] px-2">
-                <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-white">
-                  <img 
-                    src={src} 
-                    alt={`Depoimento ${index + 1}`} 
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-auto object-cover"
-                  />
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="embla__slide flex-[0_0_85%] min-w-0 sm:flex-[0_0_45%] lg:flex-[0_0_35%] px-2">
+                <div className="h-full rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-white flex flex-col">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <div className="flex items-center gap-1 mb-3 text-amber-400">
+                      <Star className="w-4 h-4 fill-current" />
+                      <Star className="w-4 h-4 fill-current" />
+                      <Star className="w-4 h-4 fill-current" />
+                      <Star className="w-4 h-4 fill-current" />
+                      <Star className="w-4 h-4 fill-current" />
+                    </div>
+                    <p className="text-sm leading-relaxed text-muted-foreground italic mb-6 flex-1">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
+                        {testimonial.name.charAt(0)}
+                      </div>
+                      <div className="text-left">
+                        <p className="text-sm font-bold text-foreground leading-none">{testimonial.name}</p>
+                        <p className="text-[11px] text-muted-foreground mt-1">Cliente Verificada</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="aspect-video relative overflow-hidden bg-muted">
+                    <img 
+                      src={testimonial.img} 
+                      alt={`Depoimento ${index + 1}`} 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
