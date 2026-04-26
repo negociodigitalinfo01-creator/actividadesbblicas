@@ -561,3 +561,38 @@ function GuaranteeCard({ title, days, color, icon: Icon }: { title: string; days
     </div>
   );
 }
+
+export function FAQ() {
+  const faqs = [
+    {
+      q: "¿Como recibo o material?",
+      a: "Le llega de una a su correo apenas se confirme el pago. Es digital, lo descarga y listo."
+    },
+    {
+      q: "¿Sirve para niños de qué edad?",
+      a: "Está pensado para pelados de todas las edades, desde los más chiquiticos hasta los más grandes de la escuela dominical."
+    },
+    {
+      q: "¿El pago es seguro?",
+      a: "¡Más que seguro! Usamos plataformas con toda la seguridad para que no tenga ningún complique."
+    }
+  ];
+
+  return (
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-black text-center mb-10 text-foreground">
+          Preguntas <span className="text-primary">Frecuentes</span>
+        </h2>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border border-border rounded-2xl p-6 bg-muted/30">
+              <h3 className="font-bold text-base mb-2 text-foreground">{faq.q}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
