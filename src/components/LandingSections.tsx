@@ -332,7 +332,7 @@ export function BonusDetails() {
 
         <div className="rounded-2xl border-2 inline-flex flex-col items-center gap-1 px-10 py-4 mb-8 border-border">
           <p className="text-xs uppercase tracking-wide font-bold text-foreground">Total en Bonos</p>
-          <p className="text-2xl font-black line-through text-destructive">$ 76.800</p>
+          <p className="text-2xl font-black line-through text-destructive">$ 116.700</p>
           <p className="text-lg font-black text-success">Hoy: Completamente GRATIS</p>
         </div>
 
