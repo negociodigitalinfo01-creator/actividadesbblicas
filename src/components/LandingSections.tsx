@@ -32,19 +32,11 @@ export function Hero() {
             <div className="absolute left-[-2px] top-[44%] w-[3px] height-[44px] bg-zinc-900 rounded-l-sm" />
             <div className="absolute right-[-2px] top-[30%] w-[3px] height-[64px] bg-zinc-900 rounded-r-sm" />
             
-            <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black cursor-pointer group">
-              <video 
-                src="/vsl.mp4" 
-                poster="/vsl-poster.jpg" 
-                playsInline 
-                className="w-full h-full object-cover"
-              />
+            <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black">
+              <div className="w-full h-full" dangerouslySetInnerHTML={{ 
+                __html: `<wistia-player media-id="zwnzq9nuy8" aspect="0.5625"></wistia-player>` 
+              }} />
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[78px] h-[22px] bg-black rounded-full z-10 pointer-events-none" />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/25 group-hover:bg-black/40 transition-colors pointer-events-none">
-                <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-xl transform group-hover:scale-110 transition-transform">
-                  <Play className="w-7 h-7 text-primary ml-1 fill-current" />
-                </div>
-              </div>
             </div>
           </div>
         </div>
