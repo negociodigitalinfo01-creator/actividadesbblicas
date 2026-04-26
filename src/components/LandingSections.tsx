@@ -370,16 +370,19 @@ export function TestimonialsCarousel() {
   const testimonials = [
     {
       img: "/depoimento-whats-1.png",
+      avatar: "/avatar-juliana.png",
       name: "Juliana Castro",
       text: "¡Uff, re-feliz! Inclusive ya se lo pasé a las otras profes de la iglesia. Las clases quedaron re-chéveres y los pelados participan mucho más. Valeó muchísimo la pena, de verdad."
     },
     {
       img: "/depoimento-whats-2.png",
+      avatar: "/avatar-barbara.jpg",
       name: "Bárbara Ospina",
       text: "En serio, me cambió las clases de una. Los pelados se quedan re-metidos de principio a fin y ya no me toca matarme horas preparando todo. La variedad es una chimba."
     },
     {
       img: "/depoimento-whats-3.png",
+      avatar: "/avatar-carla.png",
       name: "Carla Martínez",
       text: "De una lo usé con mis pelados este fincho. Les fascinó el libro de colorear e los juegos. Está mucho más bacano enseñar la Biblia en casa ahora. Hasta mi marido quedó re-tramado."
     },
@@ -415,11 +418,13 @@ export function TestimonialsCarousel() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center border border-primary/20">
+                      <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/20 shrink-0">
                         <img 
-                          src={testimonial.img} 
+                          src={testimonial.avatar} 
                           alt={testimonial.name}
-                          className="w-full h-full object-cover object-top scale-[2.5]"
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <div className="text-left">
