@@ -352,7 +352,7 @@ function BonusCard({ index, title, desc, oldPrice, img }: { index: string; title
     <div className="rounded-2xl border-2 overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all bg-white border-border">
       <div className="px-5 pt-5 pb-5 flex flex-col items-center flex-1">
         <span className="text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest text-primary">BÔNUS {index}</span>
-        <img alt={title} className="w-full rounded-xl mb-5 aspect-video object-cover shadow-md" src={img} />
+        <img alt={title} className="w-full rounded-xl mb-5 shadow-md object-contain" src={img} />
         <h3 className="font-bold text-base mb-2 leading-snug text-foreground">{title}</h3>
         <p className="text-sm leading-relaxed mb-4 flex-1 text-muted-foreground">{desc}</p>
         <span className="text-xs font-semibold px-3 py-1 rounded-full text-primary">
