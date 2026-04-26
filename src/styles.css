@@ -130,3 +130,10 @@
     color: var(--color-foreground);
   }
 }
+
+wistia-player[media-id='zwnzq9nuy8']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zwnzq9nuy8/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 177.78%;
+}
