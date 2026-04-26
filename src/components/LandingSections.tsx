@@ -370,12 +370,12 @@ export function TestimonialsCarousel() {
   const testimonials = [
     {
       img: "/depoimento-whats-1.png",
-      name: "Juliana Silva",
+      name: "Juliana Castro",
       text: "¡Uff, re-feliz! Inclusive ya se lo pasé a las otras profes de la iglesia. Las clases quedaron re-chéveres y los pelados participan mucho más. Valeó muchísimo la pena, de verdad."
     },
     {
       img: "/depoimento-whats-2.png",
-      name: "Barbara Souza",
+      name: "Bárbara Ospina",
       text: "En serio, me cambió las clases de una. Los pelados se quedan re-metidos de principio a fin y ya no me toca matarme horas preparando todo. La variedad es una chimba."
     },
     {
