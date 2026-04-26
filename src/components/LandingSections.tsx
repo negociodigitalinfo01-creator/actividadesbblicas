@@ -295,21 +295,21 @@ export function BonusDetails() {
             title="Potinho da Oração Infantil" 
             desc="Modelos prontos para incentivar o hábito da oração diária de forma simples e prática."
             oldPrice="R$ 19,90"
-            img="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+            img="/bonus-1.png"
           />
           <BonusCard 
             index="02" 
             title="Livro de Colorir Cristão" 
             desc="Ilustrações bíblicas para colorir e reforçar os ensinamentos de maneira criativa."
             oldPrice="R$ 27,00"
-            img="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop"
+            img="/bonus-2.png"
           />
           <BonusCard 
             index="03" 
             title="Jogos Bíblicos Educativos" 
             desc="Atividades interativas para tornar o aprendizado bíblico mais leve e divertido."
             oldPrice="R$ 29,90"
-            img="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800&auto=format&fit=crop"
+            img="/bonus-3.png"
           />
         </div>
 
