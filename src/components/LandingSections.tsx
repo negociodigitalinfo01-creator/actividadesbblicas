@@ -214,6 +214,7 @@ export function Pricing() {
               <span className="text-[11px] font-black uppercase tracking-widest text-primary">Garantía Incondicional</span>
             </div>
             <p className="text-base font-black text-foreground">Satisfacción garantizada o le devolvemos su dinero</p>
+            <p className="text-[11px] font-bold mt-1 text-primary animate-pulse uppercase tracking-tighter">¡Pilas! Que esta oferta es por tiempo limitado.</p>
           </div>
           <div className="grid grid-cols-2 gap-3">
             <GuaranteeCard title="Paquete Esencial" days="7 Días" color="text-success" icon={Shield} />
