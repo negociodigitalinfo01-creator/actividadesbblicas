@@ -141,7 +141,7 @@ export function Pricing() {
               <span className="line-through text-sm font-medium text-destructive">De $ 19.900</span>
               <div className="text-3xl font-black mt-1 text-success">a solo: $ 9.90</div>
               <p className="text-xs mt-1 text-muted-foreground">pago único</p>
-              <p className="text-xs font-bold mt-2 mb-3 text-success">¡Ahorre $ 40.000!</p>
+              
             </div>
             <div className="px-6 py-4 flex-1">
               <ul className="text-left space-y-3 mb-6">
@@ -181,7 +181,7 @@ export function Pricing() {
               <span className="line-through text-sm font-medium text-destructive">De $ 126.700</span>
               <div className="text-3xl font-black mt-1 text-success">a solo: $ 17.00</div>
               <p className="text-xs mt-1 text-muted-foreground">pago único</p>
-              <p className="text-xs font-bold mt-2 mb-3 text-success">¡Ahorre $ 109.700!</p>
+              
             </div>
             <div className="px-6 py-4 flex-1">
               <ul className="text-left space-y-3 mb-6">
