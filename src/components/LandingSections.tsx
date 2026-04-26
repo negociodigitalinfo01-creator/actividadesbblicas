@@ -35,9 +35,7 @@ export function Hero() {
             <div className="absolute right-[-2px] top-[30%] w-[3px] height-[64px] bg-zinc-900 rounded-r-sm" />
             
             <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black">
-              <div className="w-full h-full" dangerouslySetInnerHTML={{ 
-                __html: `<wistia-player media-id="zwnzq9nuy8" aspect="0.5625"></wistia-player>` 
-              }} />
+              <wistia-player media-id="zwnzq9nuy8" aspect="0.5625" className="block w-full h-full" />
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[78px] h-[22px] bg-black rounded-full z-10 pointer-events-none" />
             </div>
           </div>
@@ -345,9 +343,9 @@ export function TestimonialsCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })]);
 
   const testimonials = [
-    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-1.png",
-    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-2.png",
-    "https://lovable-uploads.s3.us-west-2.amazonaws.com/depoimento-whats-3.png",
+    "/depoimento-whats-1.png",
+    "/depoimento-whats-2.png",
+    "/depoimento-whats-3.png",
   ];
 
   return (
