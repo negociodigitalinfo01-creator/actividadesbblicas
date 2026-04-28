@@ -139,7 +139,7 @@ export function Pricing() {
             <div className="px-6 pt-6 pb-5 text-center border-b">
               <h3 className="text-2xl font-black tracking-tight uppercase mb-3 text-primary">Paquete Esencial</h3>
               <span className="line-through text-sm font-medium text-destructive">De $ 19.900</span>
-              <div className="text-3xl font-black mt-1 text-success">a solo: $ 9.90</div>
+              <div className="text-3xl font-black mt-1 text-success">a solo: $ 4.99</div>
               <p className="text-xs mt-1 text-muted-foreground">pago único</p>
               
             </div>
