@@ -311,28 +311,28 @@ export function BonusDetails() {
             index="01" 
             title="Cajita de la Oración (Frasquito de Oración)" 
             desc="Listo para imprimir y armar de una. Modelos listos para incentivar el hábito de la oración."
-            oldPrice="$ 19.900"
+            oldPrice="$ 19.90"
             img="/bono-1.png"
           />
           <BonusCard 
             index="02" 
             title="Libro de Colorear Cristiano" 
             desc="Dibujos bien tiernos para enseñar con toda la alegría. Ilustraciones para reforzar enseñanzas."
-            oldPrice="$ 56.900"
+            oldPrice="$ 56.90"
             img="/bono-2.png"
           />
           <BonusCard 
             index="03" 
             title="Juegos Bíblicos" 
             desc="Quiz, dominó, UNO y ¡muchas vainas más! Actividades interactivas para el aprendizaje."
-            oldPrice="$ 39.900"
+            oldPrice="$ 39.90"
             img="/bono-3.png"
           />
         </div>
 
         <div className="rounded-2xl border-2 inline-flex flex-col items-center gap-1 px-10 py-4 mb-8 border-border">
           <p className="text-xs uppercase tracking-wide font-bold text-foreground">Total en Bonos</p>
-          <p className="text-2xl font-black line-through text-destructive">$ 116.700</p>
+          <p className="text-2xl font-black line-through text-destructive">$ 116.70</p>
           <p className="text-lg font-black text-success">Hoy: Completamente GRATIS</p>
         </div>
 
