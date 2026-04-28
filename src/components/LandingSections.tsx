@@ -7,7 +7,7 @@ function useWistiaScripts() {
   useEffect(() => {
     const scripts = [
       { id: "wistia-player-script", src: "https://fast.wistia.com/player.js", type: undefined },
-      { id: "wistia-embed-zwnzq9nuy8", src: "https://fast.wistia.com/embed/zwnzq9nuy8.js", type: "module" },
+      { id: "wistia-embed-m1qq3m6l5p", src: "https://fast.wistia.com/embed/m1qq3m6l5p.js", type: "module" },
     ];
 
     scripts.forEach(({ id, src, type }) => {
@@ -52,7 +52,7 @@ export function Hero() {
             
             <div className="relative aspect-[9/16] rounded-[26px] overflow-hidden bg-black">
               <div className="w-full h-full" suppressHydrationWarning dangerouslySetInnerHTML={{ 
-                __html: `<wistia-player media-id="zwnzq9nuy8" aspect="0.5625"></wistia-player>` 
+                __html: `<wistia-player media-id="m1qq3m6l5p" aspect="0.5625"></wistia-player>` 
               }} />
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[78px] h-[22px] bg-black rounded-full z-10 pointer-events-none" />
             </div>
