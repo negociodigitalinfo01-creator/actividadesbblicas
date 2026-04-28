@@ -43,10 +43,12 @@ export const Route = createRootRoute({
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b90c9a1a-f775-4a5a-bec1-f5dba65395a4/id-preview-645bfcc0--e305ee0a-267a-4682-8a4f-f92a44d2f788.lovable.app-1777339839103.png" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fast.wistia.com" },
+      { rel: "preconnect", href: "https://fast.wistia.net" },
+      { rel: "preconnect", href: "https://embed-ssl.wistia.com", crossOrigin: "anonymous" },
+      { rel: "dns-prefetch", href: "https://distillery.wistia.com" },
+      { rel: "dns-prefetch", href: "https://pipedream.wistia.com" },
     ],
   }),
   shellComponent: RootShell,
