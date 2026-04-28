@@ -152,9 +152,9 @@ export function Pricing() {
               </ul>
             </div>
             <div className="px-6 pb-6">
-              <button className="w-full rounded-full font-bold py-3 border-2 transition-all cursor-pointer text-sm bg-primary border-primary text-white hover:opacity-90">
+              <a href="https://pay.hotmart.com/K105562119W?off=uw4en0d0" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
                 ¡Quiero mi acceso ya mismo!
-              </button>
+              </a>
               <div className="mt-4 rounded-xl px-4 py-3 text-center bg-primary/5">
                   <p className="text-[11px] font-extrabold tracking-wide uppercase mb-1.5 text-primary">
                     ¡Aún está a tiempo de llevar la mejor opción!
@@ -199,7 +199,7 @@ export function Pricing() {
               </ul>
             </div>
             <div className="px-6 pb-6">
-              <a href="https://pay.wiapy.com/kWefAj46uw" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
+              <a href="https://pay.hotmart.com/K105562119W?off=dxbxj1cx" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
                 ¡Quiero mi acceso ya mismo!
               </a>
             </div>
