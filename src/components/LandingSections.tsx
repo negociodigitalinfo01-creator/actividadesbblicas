@@ -145,7 +145,7 @@ export function Pricing() {
             </div>
             <div className="px-6 py-4 flex-1">
               <ul className="text-left space-y-3 mb-6">
-                <PricingFeature text="+375 Actividades Bíblicas Listas para Imprimir" />
+                <PricingFeature text="+750 Actividades Bíblicas Listas para Imprimir" />
                 <PricingFeature text="Acceso inmediato y vitalicio" />
                 <PricingFeature text="Enviamos por E-mail y Whatsapp" />
                 <PricingFeature text="Garantía de 7 Días" />
@@ -185,7 +185,7 @@ export function Pricing() {
             </div>
             <div className="px-6 py-4 flex-1">
               <ul className="text-left space-y-3 mb-6">
-                <PricingFeature text="+750 Actividades Bíblicas Listas para Imprimir" />
+                <PricingFeature text="Recibe 200 actividades bíblicas diferentes cada semana!" />
                 <PricingFeature text="Actualizaciones Semanales" />
                 <PricingFeature text="Acceso inmediato y vitalicio" />
                 <PricingFeature text="Enviamos por E-mail y Whatsapp" />
