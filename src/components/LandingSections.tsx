@@ -23,13 +23,7 @@ function useWistiaScripts() {
 }
 
 export function AnnouncementBar() {
-  return (
-    <div className="fixed top-0 left-0 right-0 z-50 py-2.5 px-4 text-center bg-primary">
-      <p className="text-white text-sm md:text-base font-bold drop-shadow-sm">
-        🚨 OFERTA VÁLIDA SOLO HOY - 26/04/2026
-      </p>
-    </div>
-  );
+  return null;
 }
 
 export function Hero() {
@@ -152,7 +146,7 @@ export function Pricing() {
               </ul>
             </div>
             <div className="px-6 pb-6">
-              <a href="https://pay.hotmart.com/K105562119W?off=uw4en0d0" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
+              <a href="https://pay.hotmart.com/K105562119W?off=uw4en0d0&checkoutMode=10" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
                 ¡Quiero mi acceso ya mismo!
               </a>
               <div className="mt-4 rounded-xl px-4 py-3 text-center bg-primary/5">
@@ -199,7 +193,7 @@ export function Pricing() {
               </ul>
             </div>
             <div className="px-6 pb-6">
-              <a href="https://pay.hotmart.com/K105562119W?off=dxbxj1cx" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
+              <a href="https://pay.hotmart.com/K105562119W?off=dxbxj1cx&checkoutMode=10" target="_blank" rel="noopener noreferrer" className="block w-full rounded-full font-bold py-3 border-2 text-white text-sm text-center hover:opacity-90 transition-all bg-primary border-primary">
                 ¡Quiero mi acceso ya mismo!
               </a>
             </div>
